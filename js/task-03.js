@@ -13,6 +13,8 @@ const images = [
   },
 ];
 
+//Create gallery
+
 const galleryList = document.querySelector('.gallery');
 console.log(galleryList);
 
@@ -25,6 +27,8 @@ const listOfImages = images
 console.log(listOfImages);
 
 galleryList.insertAdjacentHTML('beforeend', listOfImages);
+
+// Styles of the gallery
 
 const galleryStyle = document.querySelector('.gallery');
 galleryStyle.style.listStyle = 'none';
