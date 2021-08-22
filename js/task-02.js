@@ -10,46 +10,58 @@ const ingredients = [
 const list = document.querySelector('#ingredients');
 console.log(list);
 
-const firstIngredient = document.createElement('li');
-firstIngredient.textContent = ingredients[0];
-firstIngredient.classList.add('item');
-console.log(firstIngredient);
+// the first way
 
-const secondIngredient = document.createElement('li');
-secondIngredient.textContent = ingredients[1];
-secondIngredient.classList.add('item');
-console.log(secondIngredient);
+const listOfIngredients = ingredients.forEach(item => {
+  let li = document.createElement('li');
+  li.textContent = item;
+  li.classList.add('item');
+  list.append(li);
+  console.log(li);
+});
 
-const thirdIngredient = document.createElement('li');
-thirdIngredient.textContent = ingredients[2];
-thirdIngredient.classList.add('item');
-console.log(thirdIngredient);
+// the second way
 
-const fourthIngredient = document.createElement('li');
-fourthIngredient.textContent = ingredients[3];
-fourthIngredient.classList.add('item');
-console.log(fourthIngredient);
+// const firstIngredient = document.createElement('li');
+// firstIngredient.textContent = ingredients[0];
+// firstIngredient.classList.add('item');
+// console.log(firstIngredient);
 
-const fifthIngredient = document.createElement('li');
-fifthIngredient.textContent = ingredients[4];
-fifthIngredient.classList.add('item');
-console.log(fifthIngredient);
+// const secondIngredient = document.createElement('li');
+// secondIngredient.textContent = ingredients[1];
+// secondIngredient.classList.add('item');
+// console.log(secondIngredient);
 
-const sixthIngredient = document.createElement('li');
-sixthIngredient.textContent = ingredients[5];
-sixthIngredient.classList.add('item');
-console.log(sixthIngredient);
+// const thirdIngredient = document.createElement('li');
+// thirdIngredient.textContent = ingredients[2];
+// thirdIngredient.classList.add('item');
+// console.log(thirdIngredient);
 
-list.append(
-  firstIngredient,
-  secondIngredient,
-  thirdIngredient,
-  fourthIngredient,
-  fifthIngredient,
-  sixthIngredient
-);
+// const fourthIngredient = document.createElement('li');
+// fourthIngredient.textContent = ingredients[3];
+// fourthIngredient.classList.add('item');
+// console.log(fourthIngredient);
 
-// the second way with innerHTML
+// const fifthIngredient = document.createElement('li');
+// fifthIngredient.textContent = ingredients[4];
+// fifthIngredient.classList.add('item');
+// console.log(fifthIngredient);
+
+// const sixthIngredient = document.createElement('li');
+// sixthIngredient.textContent = ingredients[5];
+// sixthIngredient.classList.add('item');
+// console.log(sixthIngredient);
+
+// list.append(
+//   firstIngredient,
+//   secondIngredient,
+//   thirdIngredient,
+//   fourthIngredient,
+//   fifthIngredient,
+//   sixthIngredient
+// );
+
+// the third way with innerHTML
 
 // const markup = ingredients
 // .map((ingredient) => `<li class="item"> ${ingredient}</li>`)
