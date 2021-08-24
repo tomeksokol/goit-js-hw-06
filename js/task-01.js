@@ -25,3 +25,18 @@ console.log(`Category: ${thirdCategoryName[2].textContent}`);
 
 const elementNumberCat3 = document.querySelectorAll('.item > ul');
 console.log(`Elements: ${elementNumberCat3[2].children.length}`);
+
+// second way
+// document.addEventListener("DOMContentLoaded", () => {
+//   const d = document;
+//   const qs = (selector) => d.querySelector(selector);
+//   const qsa = (selector) => d.querySelectorAll(selector);
+
+//   const items = qsa("li.item");
+//   console.log(items);
+//   console.log(items.length);
+//   [...items].forEach((item) => {
+//     console.log(item.children[0].textContent);
+//     console.log(item.children[1].children.length);
+//   });
+// });
